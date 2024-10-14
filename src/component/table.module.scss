@@ -1,0 +1,50 @@
+.table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  box-shadow: 0.5em 0.5em 0.4em #a8bff7;
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+
+  thead {
+    background-color: #6c7ae0;
+
+    tr {
+      th {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding-block: 0.5em;
+      }
+      > :nth-child(1) {
+        border-radius: 0.5em 0em 0em 0em;
+      }
+      > :nth-child(5) {
+        border-radius: 0em 0.5em 0em 0em;
+      }
+    }
+  }
+  tbody {
+    background-color: white;
+
+    tr {
+      td {
+        text-align: center;
+        font-size: 1.5rem;
+        padding-block: 0.5em;
+        color: #444647;
+      }
+    }
+    > :hover {
+      background-color: #b3b8df;
+    }
+    > :last-child {
+      > :nth-child(1) {
+        border-radius: 0em 0em 0em 0.5em;
+      }
+      > :nth-child(5) {
+        border-radius: 0em 0em 0.5em 0em;
+      }
+    }
+  }
+}

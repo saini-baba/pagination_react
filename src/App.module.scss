@@ -1,0 +1,73 @@
+.table {
+  display: grid;
+  gap: 2em;
+  text-align: center;
+  padding-block: 2em;
+  h1 {
+    font-size: 3.5rem;
+    color: #3144da;
+  }
+  .input {
+    display: flex;
+    gap: 1em;
+    justify-content: flex-end;
+    input {
+      font-size: 1.5rem;
+      border: none;
+      padding-block: 0.3em;
+      padding-inline: 0.5em;
+      border-radius: 0.3em;
+    }
+    button {
+      font-size: 1.5rem;
+      border: 0.1em solid #c4d3f6;
+      padding-inline: 0.5em;
+      padding-block: 0.2em;
+      border-radius: 0.3em;
+      background-color: #8babf7;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        border: 0.1em solid #9db8f7;
+        background-color: #a6bbeb;
+        // outline: 2px solid red;
+        color: rgb(56, 56, 56);
+      }
+    }
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    list-style: none;
+    gap: 2em;
+
+    button {
+      background-color: #4caf50; // Green background
+      border: none;
+      color: white; // White text
+      padding: 10px 15px; // Some padding
+      margin: 0 5px; // Spacing between buttons
+      cursor: pointer; // Pointer cursor on hover
+      border-radius: 5px; // Rounded corners
+      transition: background-color 0.3s; // Smooth background color transition
+
+      &:hover {
+        background-color: #45a049; // Darker green on hover
+      }
+    }
+
+    .active {
+      background-color: #007bff; // Blue background for active page
+      color: white; // White text for active page
+      font-weight: bold; // Bold text for active page
+    }
+
+    .disabled {
+      background-color: #cccccc; // Gray background for disabled buttons
+      color: #666666; // Darker gray text for disabled buttons
+      cursor: not-allowed; // Not allowed cursor
+    }
+  }
+}
